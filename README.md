@@ -1,84 +1,102 @@
 
-# Ideal Function Matching – DLMDSPWP01 Assignment 📊
+# Python Function Mapping 📊
 
-This project was developed as part of the **DLMDSPWP01 – Programming with Python** course at IU. It implements a complete pipeline to analyze and map ideal mathematical functions to test data based on least-square deviation.
+A comprehensive Python project developed for the DLMDSPWP01 module at IU. This solution selects ideal functions for a given training dataset based on least-square error, maps test data under a √2 deviation constraint, stores results in a SQLite database, and visualizes the relationships using Bokeh.
 
-## 📌 Objective
+![Python](https://img.shields.io/badge/Python-3.8+-blue)
+![Status](https://img.shields.io/badge/status-Tested--and--Working-brightgreen)
+![License](https://img.shields.io/badge/license-Academic-lightgrey)
 
-Given:
-- A training dataset with 4 target functions
-- A set of 50 candidate ideal functions
-- A test dataset with `x, y` values
+---
 
-This project:
-- Selects the 4 best-fit ideal functions using least-square error
-- Maps test points to those functions under a √2 deviation rule
-- Stores all results in a local SQLite database
-- Visualizes mappings using Bokeh plots
+## 📌 Summary of Modifications and Features
 
-## 📁 Project Structure
+- ✅ Used **official datasets** provided via tutor ticket (not dummy)
+- ✅ Applied **least-square deviation** to select 4 ideal functions from 50
+- ✅ Mapped test data points with √2 * max deviation rule
+- ✅ Built using **modular OOP** (class-based design)
+- ✅ Stored results in **SQLite** using **SQLAlchemy ORM**
+- ✅ Created **interactive Bokeh visualizations**
+- ✅ Fully **unit tested with pytest**
+- ✅ Anti-plagiarism compliant with academic declaration
+- ✅ Deployment-ready structure with `requirements.txt` and Git integration
+
+---
+
+## 📁 Folder Structure
 
 ```
 .
-├── data/                # Contains CSV datasets and generated database
+├── data/
 │   ├── train.csv
 │   ├── ideal.csv
 │   ├── test.csv
 │   └── ideal_functions.db
-├── src/                 # Python modules
+├── src/
 │   ├── main.py
-│   ├── database.py
 │   ├── data_processor.py
+│   ├── database.py
 │   └── visualization.py
-├── tests/               # Unit tests with pytest
-├── outputs/             # Contains visualization.html (interactive Bokeh plot)
+├── tests/
+│   └── test_all.py
+├── outputs/
+│   └── visualization.html
 ├── requirements.txt
 └── README.md
 ```
 
-## 🚀 How to Run
+---
 
-1. Clone the repo:
-```bash
-git clone https://github.com/ganeshlakshmana/IdealFunction-Matching.git
-cd IdealFunction-Matching
-```
+## 🚀 How to Run This Project
 
-2. Set up environment:
 ```bash
+# Clone the repo
+git clone https://github.com/ganeshlakshmana/python-function-mapping.git
+cd python-function-mapping
+
+# Setup Python environment
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-```
 
-3. Run the program:
-```bash
+# Install all required packages
+pip install -r requirements.txt
+
+# Run the application
 python src/main.py
 ```
 
-4. Open results:
-- Interactive Plot → `outputs/visualization.html`
-- Database → `data/ideal_functions.db` (use DB Browser for SQLite)
+---
 
-## 🛠 Technologies Used
+## 🧪 Run Unit Tests
 
-- **Python 3.8+**
-- Pandas, NumPy
-- SQLAlchemy (ORM for SQLite)
-- Bokeh (interactive visualization)
-- Pytest (unit testing)
+```bash
+pytest tests/
+```
 
-## 📷 Screenshot
+- Validates correct ideal function selection and test data mapping logic
+- Includes mock test data generation
 
-> Add a screenshot of your Bokeh HTML here if hosted
+---
 
-## 📚 Academic Note
+## 🔍 Outputs & Verification
 
-This repository is a demonstration of programming concepts including:
-- OOP, exception handling, inheritance
-- Data analysis & mapping using least squares
-- Database persistence and visualization
+- `outputs/visualization.html` → View in browser for interactive plots
+- `data/ideal_functions.db` → Open with DB Browser for SQLite to inspect mapped results
+- `tests/test_all.py` → Unit tests with `pytest`
 
-Originally developed for coursework at IU (International University of Applied Sciences).
+---
+
+## 📚 Academic Integrity Note
+
+This project was built and submitted independently as part of coursework for **IU – DLMDSPWP01: Programming with Python**. The solution follows IU's academic integrity guidelines and Turnitin compliance requirements.
+
+---
+
+## 👨‍💻 Author
+
+**Ganesh Lakshmana**  
+Matriculation Number: 10241551  
+GitHub: [@ganeshlakshmana](https://github.com/ganeshlakshmana)
+Linkedin:(https://www.linkedin.com/in/ganesh-lakshmana-71085b224/)
 
 ---
