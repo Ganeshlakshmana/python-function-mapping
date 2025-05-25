@@ -79,5 +79,10 @@ This repository is a demonstration of programming concepts including:
 - Data analysis & mapping using least squares
 - Database persistence and visualization
 
+## Author details
+- Ganesh Lakshmana
+- Social: [in/ganesh-lakshmana-71085b224](https://www.linkedin.com/in/ganesh-lakshmana-71085b224/)
+- Website: [my portfolio](https://www.ganeshlakshmana.online/)
+
 Originally developed for coursework at IU (International University of Applied Sciences).
 ---
