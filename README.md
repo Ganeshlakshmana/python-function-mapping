@@ -1,9 +1,9 @@
 
-# Ideal Function Matching – DLMDSPWP01 Assignment 📊
+# Ideal Function Matching – DLMDSPWP01 Assignment 
 
 This project was developed as part of the **DLMDSPWP01 – Programming with Python** course at IU. It implements a complete pipeline to analyze and map ideal mathematical functions to test data based on least-square deviation.
 
-## 📌 Objective
+## Objective
 
 Given:
 - A training dataset with 4 target functions
@@ -16,7 +16,7 @@ This project:
 - Stores all results in a local SQLite database
 - Visualizes mappings using Bokeh plots
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 .
@@ -36,7 +36,7 @@ This project:
 └── README.md
 ```
 
-## 🚀 How to Run
+## How to Run
 
 1. Clone the repo:
 ```bash
@@ -60,7 +60,7 @@ python src/main.py
 - Interactive Plot → `outputs/visualization.html`
 - Database → `data/ideal_functions.db` (use DB Browser for SQLite)
 
-## 🛠 Technologies Used
+## Technologies Used
 
 - **Python 3.8+**
 - Pandas, NumPy
@@ -68,11 +68,11 @@ python src/main.py
 - Bokeh (interactive visualization)
 - Pytest (unit testing)
 
-## 📷 Screenshot
+## Screenshot
 
 > Add a screenshot of your Bokeh HTML here if hosted
 
-## 📚 Academic Note
+## Academic Note
 
 This repository is a demonstration of programming concepts including:
 - OOP, exception handling, inheritance
@@ -80,5 +80,4 @@ This repository is a demonstration of programming concepts including:
 - Database persistence and visualization
 
 Originally developed for coursework at IU (International University of Applied Sciences).
-
 ---
